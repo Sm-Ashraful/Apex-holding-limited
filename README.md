@@ -1,8 +1,20 @@
-# React + Vite
+# Task-02: Design a Website Home Page using content fro https://apexholdings.com
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Quick start
 
-Currently, two official plugins are available:
+- [Download from Github](https://github.com/Sm-Ashraful/Apex-holding-limited) or clone the repo : `git clone https://github.com/Sm-Ashraful/Apex-holding-limited.git`
+- Recommended `Node.js v18.x`.
+- **Install:** `npm install`
+- **Start:** `npm run dev`
+- **Build:** `npm run build`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+### Description
+- This project is a modern and responsive homepage for a fictitious company. It allows users to get smooth user-experience. 
+
+## Technologies Used:
+- React + vite
+- Redux-Toolkit
+- HTML5
+- SCSS
+
