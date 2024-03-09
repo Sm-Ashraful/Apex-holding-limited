@@ -1,0 +1,35 @@
+//base style start
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //1rem = 10px; 10px/16px=6205%
+  @include respond(tab-land) {
+    font-size: 56.25%; //1rem = 9px, 9/16= 56.25%
+  }
+  @include respond(tab-port) {
+    font-size: 50%; //1rem = 8px, 8/16= 50%
+  }
+  // @include respond(phone) {
+  //   font-size: 40%;
+  // }
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12; 12/16=75
+  }
+}
+
+body {
+  padding: 3rem;
+  box-sizing: border-box;
+  // background-image: linear-gradient(to right, #000f1d, #00182e, #000f1d);
+
+  @include respond(tab-port) {
+    padding: 0; //1rem = 8px, 8/16= 50%
+  }
+}
+/// base style end

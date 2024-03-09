@@ -1,46 +1,25 @@
-@use "./variables.scss" as *;
+@use "./variables" as *;
+@use "./mixins" as *;
 
-*,
-::before,
-::after {
-  box-sizing: border-box; /* 1 */
-  border-width: 0; /* 2 */
-  border-style: solid; /* 2 */
-  border-color: #e5e7eb; /* 2 */
-}
+@import "./base/typography";
+@import "./base/base";
+@import "./base/animation";
+@import "./base/utilities";
 
-html {
-  line-height: 1.5; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  -moz-tab-size: 4; /* 3 */
-  -o-tab-size: 4;
-  tab-size: 4; /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
-  font-feature-settings: normal; /* 5 */
-  body {
-    background: $primary-color;
-    margin: 0; /* 1 */
-    line-height: inherit; /* 2 */
-    position: relative;
-    background-image: linear-gradient(to right, #000f1d, #00182e, #000f1d);
-    overflow-x: clip;
-    display: flow-root;
-    color: $secondary-color;
-  }
-}
+@import "./layout/grid";
+@import "./layout/footer";
+@import "./layout/navigation";
+
+@import "./page/home";
+
+@import "./components/composition";
+@import "./components/button";
+@import "./components/feature-box";
 
 .about-image {
   height: 180px;
 }
 
-h1 {
-  color: white;
-  padding: 0.1rem 1rem;
-  font-size: 2rem;
-  font-family: $font-stack;
-}
 .container {
   padding: 0 1.5rem; /* Default padding for small screens */
   display: flex;
@@ -76,9 +55,11 @@ opacity-top {
   width: 100%;
   height: 80px;
   display: flex;
+  background-color: #fff;
   justify-content: space-between;
   align-items: center;
   z-index: 50;
+  padding: 0 3rem;
   &__logo {
     width: 180px;
   }
@@ -88,6 +69,13 @@ opacity-top {
     align-items: center;
     justify-content: flex-end;
     flex: 1 1 0%;
+
+   @include respond(tab-port) {
+    display: none;
+  }
+  @include respond(phone) {
+    display: none;
+  }
 
     &__item {
       position: relative;
@@ -117,33 +105,33 @@ opacity-top {
     .start-home,
     li:nth-child(1):hover ~ .animation {
       width: 55px;
-      left: 18%;
+      left: 32.5%;
     }
 
     li:nth-child(2):hover ~ .animation {
       width: 70px;
-      left: 28%;
+      left: 40.5%;
     }
 
     li:nth-child(3):hover ~ .animation {
       width: 100px;
-      left: 40%;
+      left: 51%;
     }
     li:nth-child(4):hover ~ .animation {
       width: 105px;
-      left: 55%;
+      left: 63.5%;
     }
     li:nth-child(5):hover ~ .animation {
       width: 38px;
-      left: 71.5%;
+      left: 76.5%;
     }
     li:nth-child(6):hover ~ .animation {
       width: 65px;
-      left: 79%;
+      left: 82.5%;
     }
     li:nth-child(7):hover ~ .animation {
       width: 60px;
-      left: 89%;
+      left: 92%;
     }
   }
 }

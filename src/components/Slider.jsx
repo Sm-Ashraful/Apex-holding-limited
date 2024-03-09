@@ -38,17 +38,17 @@ export default function Slider() {
                             style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
                         ></div>
                         <div
-                            className="w-[605px] flex flex-col justify-center items-center text-center px-5 md:px-0"
+                            className="u-flex"
                             style={{ zIndex: 1 }}
                         >
-                            <h1 className="font-fuemen text-[#f1bf3f] text-[24px] lg:text-[38px]">
+                            <h2 className="heading-hero">
                                 {slider.title}
-                            </h1>
+                            </h2>
 
 
-                            <div className="w-full md:hidden mt-10">
-
-                            </div>
+                            <a href="#section-tours" className="btn btn--white button--animated"
+                            >Discover our tour</a
+                            >
                         </div>
                     </article>
                 );
