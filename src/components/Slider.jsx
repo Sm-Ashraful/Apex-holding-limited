@@ -47,7 +47,7 @@ export default function Slider() {
 
 
                             <a href="#section-tours" className="btn btn--white button--animated"
-                            >Discover our tour</a
+                            >Discover Us</a
                             >
                         </div>
                     </article>
