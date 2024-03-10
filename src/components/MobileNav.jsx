@@ -9,21 +9,27 @@ export default function MobileNav() {
             <div className="navigation__nav">
                 <ul className="navigation__list">
                     <li className="navigation__item">
-                        <a href="#" className="navigation__link"><span>01</span> Natours</a>
+                        <a href="#" className="navigation__link"> Home</a>
                     </li>
                     <li className="navigation__item">
                         <a href="#" className="navigation__link"
-                        ><span>02</span>Your Benefits</a
+                        >  About Us</a
                         >
                     </li>
                     <li className="navigation__item">
-                        <a href="#" className="navigation__link"><span>03</span>Popular tour</a>
+                        <a href="#" className="navigation__link">Our Business</a>
                     </li>
                     <li className="navigation__item">
-                        <a href="#" className="navigation__link"><span>04</span>Stories</a>
+                        <a href="#" className="navigation__link">Sustainability</a>
                     </li>
                     <li className="navigation__item">
-                        <a href="#" className="navigation__link"><span>05</span>Book now</a>
+                        <a href="#" className="navigation__link">  CSR</a>
+                    </li>
+                    <li className="navigation__item">
+                        <a href="#" className="navigation__link"> Career</a>
+                    </li>
+                    <li className="navigation__item">
+                        <a href="#" className="navigation__link">Contact</a>
                     </li>
                 </ul>
             </div>
